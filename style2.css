@@ -1,0 +1,86 @@
+body{
+    background-image: url("./imgs/wavy-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px; /* Set desired width */
+    height: 150px; /* Set equal height for a circle */
+    border-radius: 50%;
+    border: 2px dashed rgb(224, 174, 127);
+}
+
+.header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: white;
+    margin-left: 10px;
+    background-color: rgba(224, 174, 127, 0.61);
+    border: 1px double rgb(211, 146, 122);
+    border-radius: 6px;
+    padding: 5px 20px;
+}
+
+/* Bellow is the nav part */
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #db732eb4;
+    font-family: sans-serif;
+    box-shadow: 5px 5px 5px rgba(206, 140, 97, 0.644);
+}
+
+li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+li {
+    text-align: center;
+    float: left;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.active {
+    background-color: rgb(252, 253, 195);
+    color: rgb(0, 0, 0);
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(192, 109, 95);
+    color: white;
+}
+
+/* Bellow is the collumn texts */
+
+.newspaper {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 1px solid lightblue;
+    background-color: rgba(240, 248, 255, 0.767);
+    padding: 10px;
+    font-family:monospace;
+    box-shadow: 10px 10px lightblue;
+    width: 750px; /* Set the desired width */
+    margin: 20px auto; /* Center the box horizontally */
+  }
+  
+h2 {
+    column-span: all;
+    text-align: center;
+  }
